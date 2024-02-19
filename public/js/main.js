@@ -14,7 +14,7 @@ You know for those who are skeptical ');
 
       for(let x=0;x<attrs_length;x++){
         const attr = attrs[x];
-        queryApplyAll(`${'[${attr}]:not([${attr}^="http"],[${attr}^="blob"],[${attr}^="chrome"],[${attr}^="data"])'}`,(el)=>{
+        queryApplyAll(`[${attr}]:not([${attr}^="http"],[${attr}^="blob"],[${attr}^="chrome"],[${attr}^="data"])`,(el)=>{
          
             el.updateAttribute(attr,el[attr]);
           
@@ -35,7 +35,7 @@ You know for those who are skeptical ');
         const host = hostList[i];
         for(let x=0;x<attrs_length;x++){
           const attr = attrs[x];
-          queryApplyAll(`${'[${attr}*="https://${host}"]'}`,(el)=>{
+          queryApplyAll(`[${attr}*="https://${host}"]`,(el)=>{
             
          
               let c = '?';if(el[attr].includes('?')){c = '&';}
@@ -58,7 +58,7 @@ You know for those who are skeptical ');
 
         for(let x=0;x<attrs_length;x++){
           const attr = attrs[x];
-          queryApplyAll(`${'[${attr}^="https://${host}"]:not([${attr}*="hostname="]'}`,(el)=>{
+          queryApplyAll(`[${attr}^="https://${host}"]:not([${attr}*="hostname="]`,(el)=>{
             
          
               let c = '?';if(el[attr].includes('?')){c = '&';}
@@ -72,12 +72,12 @@ You know for those who are skeptical ');
         
         if(el.style.backgroundImage){
           let im = document.createElement('img');
-          im.src = S(()=>el.getAttribute('style').split("url('")[1].split("')")[0]+`?hostname=${"${hostname}"}`);
+          im.src = S(()=>el.getAttribute('style').split("url('")[1].split("')")[0]+`?hostname=${hostname}`);
           im.style.visibility='hidden';
           im.style.height='0px';
           document.body.appendChild(im);
         } 
-        let st = el.getAttribute('style').replaceAll("')",`?hostname=${"${hostname}')"}`); 
+        let st = el.getAttribute('style').replaceAll("')",`?hostname=${hostname}')`); 
         el.updateAttribute('style',st);
       
 
