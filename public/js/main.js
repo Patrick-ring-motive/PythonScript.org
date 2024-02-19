@@ -56,6 +56,15 @@ let declare = globalThis.declare;
       }
     });
 
+  declare(()=>{
+    queryApplyAll('[href^="https://www.www"]',(el)=>{
+      el.updateAttribute('href',el.href.replaceAll('www.www','www')); 
+    });
+    queryApplyAll('[src^="https://www.www"]',(el)=>{
+      el.updateAttribute('src',el.src.replaceAll('www.www','www')); 
+    });
+  });
+
 
     globalThis.hostList = ['www.python.org','python.org'];
     declare(()=>{
