@@ -66,7 +66,7 @@ let declare = globalThis.declare;
   });
 
 
-    globalThis.hostList = ['www.python.org','python.org'];
+    globalThis.hostList = ['python.org'];
     declare(()=>{
       const hostList = globalThis.hostList;
       const hostList_length = hostList.length;
