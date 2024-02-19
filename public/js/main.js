@@ -11,6 +11,7 @@ try{
       await import('https://www.unpkg.com/javaxscript@1.1.32/framework.js');
 }catch(e){
  document.body.innerHTML = (e.message);
+ alert(e.message);
 }
        declare(()=>{
 
