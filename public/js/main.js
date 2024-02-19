@@ -19,6 +19,10 @@ try{
       if(!globalThis.declare){
          await import('https://www.unpkg.com/javaxscript/framework.js');
       }
+
+        if(!globalThis.declare){
+         eval?.(await(await fetch('/framework.js')).text());
+      }
 }catch(e){}
 
 
