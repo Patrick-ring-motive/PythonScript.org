@@ -14,11 +14,12 @@ You know for those who are skeptical `);
     }
     void async function(){
 
-
+try{
       await import('https://www.unpkg.com/javaxscript@1.1.32/framework.js');
-if(!globalThis.declare){
-   await import('https://www.unpkg.com/javaxscript/framework.js');
-}
+      if(!globalThis.declare){
+         await import('https://www.unpkg.com/javaxscript/framework.js');
+      }
+}catch(e){}
 
  document.body.innerHTML = (e.message);
 
