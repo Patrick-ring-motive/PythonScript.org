@@ -9,11 +9,13 @@ You know for those who are skeptical `);
 
 try{
       await import('https://www.unpkg.com/javaxscript@1.1.32/framework.js');
+
+ alert(globalThis.declare);
 }catch(e){
  document.body.innerHTML = (e.message);
  alert(e.message);
 }
-
+let declare = globalThis.declare;
      try{
        declare(()=>{
 
