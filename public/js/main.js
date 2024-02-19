@@ -23,7 +23,7 @@ try{
         if(!globalThis.declare){
          eval?.(await(await fetch('/framework.js')).text());
       }
-}catch(e){}
+}catch(e){console.log(e.message);}
 
 
 
@@ -38,8 +38,7 @@ let declare = globalThis.declare;
 
     });
 }catch(e){
- document.body.innerHTML = (e.message);
- alert(e.message);
+console.log(e.message);
 }
 
     declare(()=>{
@@ -66,7 +65,7 @@ let declare = globalThis.declare;
   });
 
 
-    globalThis.hostList = ['python.org'];
+    globalThis.hostList = ['www.python.org'];
     declare(()=>{
       const hostList = globalThis.hostList;
       const hostList_length = hostList.length;
