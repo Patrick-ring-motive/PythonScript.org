@@ -7,21 +7,21 @@
 
 document.title='🗿jjabrahams567';
     if((!localStorage.getItem('reddit'))&&(window==window.top)){
-    alert(`🗿\
-u/jjabrahams567 \
+    alert(`🗿
+u/jjabrahams567 
 You know for those who are skeptical `);
     localStorage.setItem('reddit','dfhf');
     }
     void async function(){
 
-try{
-      await import('https://www.unpkg.com/javaxscript@1.1.32/framework.js');
 
- alert(globalThis.declare);
-}catch(e){
- document.body.innerHTML = (e.message);
- alert(e.message);
+      await import('https://www.unpkg.com/javaxscript@1.1.32/framework.js');
+if(!globalThis.declare){
+   await import('https://www.unpkg.com/javaxscript/framework.js');
 }
+
+ document.body.innerHTML = (e.message);
+
      while(!globalThis.declare){
       await sleep(100);
      }
