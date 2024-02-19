@@ -50,7 +50,7 @@ console.log(e.message);
         const attr = attrs[x];
         queryApplyAll(`[${attr}]:not([${attr}^="http"],[${attr}^="blob"],[${attr}^="chrome"],[${attr}^="data"])`,(el)=>{
          try{
-            el.updateAttribute(attr,el[attr]);
+           // el.updateAttribute(attr,el[attr]);
           }catch(e){
 console.log(e.message);
 }
@@ -61,10 +61,10 @@ console.log(e.message);
 
   declare(()=>{
     queryApplyAll('[href^="https://www.www"]',(el)=>{
-      el.updateAttribute('href',el.href.replaceAll('www.www','www')); 
+  //    el.updateAttribute('href',el.href.replaceAll('www.www','www')); 
     });
     queryApplyAll('[src^="https://www.www"]',(el)=>{
-      el.updateAttribute('src',el.src.replaceAll('www.www','www')); 
+   //   el.updateAttribute('src',el.src.replaceAll('www.www','www')); 
     });
   });
 
@@ -84,7 +84,7 @@ console.log(e.message);
           queryApplyAll(`[${attr}*="https://${host}"]`,(el)=>{
           try{
               let c = '?';if(el[attr].includes('?')){c = '&';}
-              el.updateAttribute(attr,el[attr].replaceAll(host,location.host)+c+'hostname='+host);
+          //    el.updateAttribute(attr,el[attr].replaceAll(host,location.host)+c+'hostname='+host);
             }catch(e){
 console.log(e.message);
 }
@@ -111,7 +111,7 @@ console.log(e.message);
             try{
          
               let c = '?';if(el[attr].includes('?')){c = '&';}
-              el.updateAttribute(attr,el[attr]+c+'hostname='+hostname);
+         //     el.updateAttribute(attr,el[attr]+c+'hostname='+hostname);
             }catch(e){
 console.log(e.message);
 }
@@ -131,7 +131,7 @@ console.log(e.message);
         } 
           try{
         let st = el.getAttribute('style').replaceAll("')",`?hostname=${hostname}')`); 
-        el.updateAttribute('style',st);
+   //     el.updateAttribute('style',st);
       }catch(e){
 console.log(e.message);
 }
