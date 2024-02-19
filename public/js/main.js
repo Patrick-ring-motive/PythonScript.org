@@ -1,4 +1,11 @@
- document.title='🗿jjabrahams567';
+  globalThis.sleep = (ms) => {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
+  };
+
+
+document.title='🗿jjabrahams567';
     if((!localStorage.getItem('reddit'))&&(window==window.top)){
     alert(`🗿\
 u/jjabrahams567 \
@@ -15,6 +22,9 @@ try{
  document.body.innerHTML = (e.message);
  alert(e.message);
 }
+     while(!globalThis.declare){
+      await sleep(100);
+     }
 let declare = globalThis.declare;
      try{
        declare(()=>{
