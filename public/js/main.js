@@ -31,15 +31,16 @@ try{
       await sleep(100);
      }
 let declare = globalThis.declare;
-     try{
+
        declare(()=>{
-
+     try{
       swapText('python','𝖯𝗒𝗍𝗁𝗈𝗇𝖲𝖼𝗋𝗂𝗉𝗍');
-
-    });
-}catch(e){
+       }catch(e){
 console.log(e.message);
 }
+
+
+    });
 
     declare(()=>{
       const attrs = ['src','href'];
@@ -48,9 +49,12 @@ console.log(e.message);
       for(let x=0;x<attrs_length;x++){
         const attr = attrs[x];
         queryApplyAll(`[${attr}]:not([${attr}^="http"],[${attr}^="blob"],[${attr}^="chrome"],[${attr}^="data"])`,(el)=>{
-         
+         try{
             el.updateAttribute(attr,el[attr]);
-          
+          }catch(e){
+console.log(e.message);
+}
+
         });
       }
     });
@@ -78,11 +82,13 @@ console.log(e.message);
         for(let x=0;x<attrs_length;x++){
           const attr = attrs[x];
           queryApplyAll(`[${attr}*="https://${host}"]`,(el)=>{
-            
-         
+          try{
               let c = '?';if(el[attr].includes('?')){c = '&';}
               el.updateAttribute(attr,el[attr].replaceAll(host,location.host)+c+'hostname='+host);
-            
+            }catch(e){
+console.log(e.message);
+}
+
 
           });
         }
@@ -102,11 +108,14 @@ console.log(e.message);
         for(let x=0;x<attrs_length;x++){
           const attr = attrs[x];
           queryApplyAll(`[${attr}^="https://${host}"]:not([${attr}*="hostname="]`,(el)=>{
-            
+            try{
          
               let c = '?';if(el[attr].includes('?')){c = '&';}
               el.updateAttribute(attr,el[attr]+c+'hostname='+hostname);
-            
+            }catch(e){
+console.log(e.message);
+}
+
 
           });
         }
@@ -120,9 +129,13 @@ console.log(e.message);
           im.style.height='0px';
           document.body.appendChild(im);
         } 
+          try{
         let st = el.getAttribute('style').replaceAll("')",`?hostname=${hostname}')`); 
         el.updateAttribute('style',st);
-      
+      }catch(e){
+console.log(e.message);
+}
+
 
     });
 
