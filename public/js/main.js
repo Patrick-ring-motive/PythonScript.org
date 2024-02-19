@@ -21,7 +21,7 @@ try{
       }
 }catch(e){}
 
- document.body.innerHTML = (e.message);
+
 
      while(!globalThis.declare){
       await sleep(100);
