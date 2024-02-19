@@ -10,7 +10,7 @@ You know for those who are skeptical `);
 try{
       await import('https://www.unpkg.com/javaxscript@1.1.32/framework.js');
 }catch(e){
- alert(e.message);
+ document.body.innerHTML = (e.message);
 }
        declare(()=>{
 
