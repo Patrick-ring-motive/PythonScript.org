@@ -92,6 +92,7 @@ let declare = globalThis.declare;
     });
 
     declare(()=>{
+      try{
       if(location.href.includes('hostname=')){
         const hostname = location.href.split('hostname=')[1].split('?')[0].split('&')[0].split('#')[0];
         const host = location.host;
@@ -128,6 +129,7 @@ let declare = globalThis.declare;
 
 
       }
+      }catch(e){console.log(e.message);}
     });
 
 
