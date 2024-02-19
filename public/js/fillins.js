@@ -4,9 +4,9 @@ if(debug){
   if(!globalThis['console.log']){ globalThis['console.log'] = console.log; }
   if(!globalThis['console.debug']){ globalThis['console.debug'] = console.debug; }
   if(!globalThis['console.error']){ globalThis['console.error'] = console.error; }
-  console.log =(a)=> alert(a);
-  console.debug =(a)=> alert(a);
-  console.error =(a)=> alert(a);
+  console.log =(a,e)=> alert(a+' '+e+' '+e?.message);
+  console.debug =(a,e)=> alert(a+' '+e+' '+e?.message);
+  console.error =(a,e)=> alert(a+' '+e+' '+e?.message);
 }
 
 if(window){
