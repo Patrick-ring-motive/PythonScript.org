@@ -1,12 +1,20 @@
  document.title='🗿jjabrahams567';
     if((!localStorage.getItem('reddit'))&&(window==window.top)){
-    alert('🗿\
+    alert(`🗿\
 u/jjabrahams567 \
-You know for those who are skeptical ');
+You know for those who are skeptical `);
     localStorage.setItem('reddit','dfhf');
     }
     (async function(){
+
+
       await import('https://www.unpkg.com/javaxscript@1.1.32/framework.js');
+
+       declare(()=>{
+
+      swapText('python','𝖯𝗒𝗍𝗁𝗈𝗇𝖲𝖼𝗋𝗂𝗉𝗍');
+
+    });
 
     declare(()=>{
       const attrs = ['src','href'];
@@ -87,10 +95,6 @@ You know for those who are skeptical ');
       }
     });
 
-    declare(()=>{
 
-      swapText('python','𝖯𝗒𝗍𝗁𝗈𝗇𝖲𝖼𝗋𝗂𝗉𝗍');
-
-    });
 
   })();
