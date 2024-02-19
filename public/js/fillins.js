@@ -1,4 +1,4 @@
-globalThis.debug = false;
+globalThis.debug = true;
 
 if(debug&&window&&(window==window.top)){
   if(!globalThis['console.log']){ globalThis['console.log'] = console.log; }
