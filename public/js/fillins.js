@@ -1,4 +1,4 @@
-globalThis.debug = true;
+globalThis.debug = false;
 
 if(debug){
   if(!globalThis['console.log']){ globalThis['console.log'] = console.log; }
