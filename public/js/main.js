@@ -34,7 +34,7 @@ let declare = globalThis.declare;
 
        declare(()=>{
      try{
-      swapText('python','𝖯𝗒𝗍𝗁𝗈𝗇𝖲𝖼𝗋𝗂𝗉𝗍');
+     // swapText('python','𝖯𝗒𝗍𝗁𝗈𝗇𝖲𝖼𝗋𝗂𝗉𝗍');
        }catch(e){
 console.log(e.message);
 }
