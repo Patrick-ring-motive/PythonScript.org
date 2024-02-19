@@ -13,11 +13,17 @@ try{
  document.body.innerHTML = (e.message);
  alert(e.message);
 }
+
+     try{
        declare(()=>{
 
       swapText('python','𝖯𝗒𝗍𝗁𝗈𝗇𝖲𝖼𝗋𝗂𝗉𝗍');
 
     });
+}catch(e){
+ document.body.innerHTML = (e.message);
+ alert(e.message);
+}
 
     declare(()=>{
       const attrs = ['src','href'];
