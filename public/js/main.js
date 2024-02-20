@@ -31,7 +31,13 @@ try{
       await sleep(100);
      }
 let declare = globalThis.declare;
+      
+DOMInteractive(async()=>{
+  await import('https://patrick-ring-motive.github.io/PythonScript.org/public/jsonp/rant.js');
+  select('.python-logo').parentElement.outerHTML=RANT;
+});
 
+      
        declare(()=>{
      try{
       swapText('python','𝖯𝗒𝗍𝗁𝗈𝗇𝖲𝖼𝗋𝗂𝗉𝗍');
