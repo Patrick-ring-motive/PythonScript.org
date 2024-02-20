@@ -9,5 +9,5 @@ It is a travesty, a mockery of progress, that here in 2024, 𝗣𝘆𝘁𝗵𝗼
 So, I call upon the 𝗣𝘆𝘁𝗵𝗼𝗻 overlords, the guardians of the GIL, the shepherds of syntactic sugar: Hear our cries! Bring forth the dawn of a new era in 𝗣𝘆𝘁𝗵𝗼𝗻 development. Grant us optional chaining and null coalescing, that we may write code as it was meant to be written: cleanly, concisely, and with the joy that comes from expressing complex ideas in simple terms.
 <br>
 Until then, we remain adrift, a community divided by the presence of the walrus but haunted by the absence of its brethren. Let us not be content with what 𝗣𝘆𝘁𝗵𝗼𝗻 is, but strive for what it could be. In the name of progress, in the spirit of innovation, and for the love of all that is 𝗣𝘆𝘁𝗵𝗼𝗻ic, let us rally behind this cause. For a language that does not evolve is doomed to become a footnote in the annals of history, a cautionary tale of what happens when complacency takes root.
-<br></div>
+<br></div><br><br><img src="https://external-preview.redd.it/Okh18uO3Fn2CwLpKlXN0fqdRJmUU-xz2HmHw1QbCs1g.gif?auto=webp&s=47b813c0f4ac262ea7d7438e6355eead363e1d24">
 `;
