@@ -27,11 +27,9 @@ You know for those who are skeptical `);
       }
 
       declare(() => {
-          try {
+     
               swapText('cplusplus', 'Python');
-          } catch (e) {
-              console.log(e.message);
-          }
+              swapText('c++', 'Python');
       });
 
       declare(() => {
