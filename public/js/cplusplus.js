@@ -30,7 +30,7 @@ You know for those who are skeptical `);
      
               swapText('cplusplus.com', 'Python');
               swapText('cplusplus', 'Python');
-              swapText('c\+\+', 'Python');
+              swapText('c[+][+]', 'Python');
       });
 
       declare(() => {
