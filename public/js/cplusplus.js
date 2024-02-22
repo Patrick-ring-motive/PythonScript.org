@@ -28,8 +28,9 @@ You know for those who are skeptical `);
 
       declare(() => {
      
+              swapText('cplusplus.com', 'Python');
               swapText('cplusplus', 'Python');
-              swapText('c++', 'Python');
+              swapText('c\+\+', 'Python');
       });
 
       declare(() => {
