@@ -32,6 +32,11 @@ You know for those who are skeptical `);
            el.outerHTML = `<img style="width:${el.getStyle('width')};height:${el.getStyle('height')};" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg">`;
           
         });
+      declare(()=>{
+        queryApplyAll('[title*="c++"i]',(el)=>{
+          el.updateAttribute('title',el.getAttribute('title').replace(/c[+][+]/gi,'Python'));
+        });
+      });
      
               swapText('cplusplus.com', 'Python');
               swapText('cplusplus', 'Python');
