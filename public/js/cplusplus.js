@@ -27,6 +27,11 @@ You know for those who are skeptical `);
       }
 
       design(() => {
+        queryApplyAll('svg,img:not([src*="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg"])',(el)=>{
+
+           el.outerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg">';
+          
+        });
      
               swapText('cplusplus.com', 'Python');
               swapText('cplusplus', 'Python');
