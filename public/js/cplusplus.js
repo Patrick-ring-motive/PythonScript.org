@@ -34,16 +34,13 @@ You know for those who are skeptical `);
         });
       declare(()=>{
         queryApplyAll('[title*="c++"i]',(el)=>{
-          el.updateAttribute('title',el.getAttribute('title').replace(/c[+][+]/gi,'Python'));
+          el.replaceAttribute('title',/c[+][+]/gi,'Python');
         });
       });
-     
-              swapText('cplusplus.com', 'Python');
-              swapText('cplusplus', 'Python');
-              swapText('c[+][+]', 'Python');
-        if(select('style#reveal')){
-          select('style#reveal').remove();
-        }
+        swapText('cplusplus.com', 'Python');
+        swapText('cplusplus', 'Python');
+        swapText('c[+][+]', 'Python');
+        select('style#reveal')?.remove?.();
       });
 
       declare(() => {
