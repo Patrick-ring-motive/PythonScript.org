@@ -26,11 +26,14 @@ You know for those who are skeptical `);
           await sleep(100);
       }
 
-      declare(() => {
+      design(() => {
      
               swapText('cplusplus.com', 'Python');
               swapText('cplusplus', 'Python');
               swapText('c[+][+]', 'Python');
+        if(select('style#reveal')){
+          select('style#reveal').remove();
+        }
       });
 
       declare(() => {
