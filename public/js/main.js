@@ -28,7 +28,11 @@ You know for those who are skeptical `);
 
       DOMInteractive(async () => {
           await import('https://patrick-ring-motive.github.io/PythonScript.org/public/jsonp/rant.js');
-          select('.python-logo').parentElement.outerHTML = RANT;
+          select('.python-logo').parentElement.outerHTML = RANT + 
+            `<br><br>
+            <h3>Here we have a simple 'Hello World' Example</h3><br><br>
+  <iframe style="width:100vw;height:100vh;padding:0px;margin:0px" frameborder="0" src="https://gist.pythonscript.org/kg583/74dcf08574bb37f13be6fd978279bd6e"></iframe>
+            `;
       });
 
       declare(() => {
