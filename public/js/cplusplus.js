@@ -25,18 +25,18 @@ You know for those who are skeptical `);
       while (!globalThis.declare) {
           await sleep(100);
       }
-
+      declare(()=>{
+        queryApplyAll('[title*="c++"i]',(el)=>{
+          el.replaceAttribute('title',/c[+][+]/gi,'Python');
+        });
+      });
       design(() => {
         queryApplyAll('svg,img:not([src*="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg"])',(el)=>{
 
            el.outerHTML = `<img style="width:${el.getStyle('width')};height:${el.getStyle('height')};" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg">`;
           
         });
-      declare(()=>{
-        queryApplyAll('[title*="c++"i]',(el)=>{
-          el.replaceAttribute('title',/c[+][+]/gi,'Python');
-        });
-      });
+
         swapText('cplusplus.com', 'Python');
         swapText('cplusplus', 'Python');
         swapText('c[+][+]', 'Python');
