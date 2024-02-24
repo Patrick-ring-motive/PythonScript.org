@@ -31,7 +31,7 @@ You know for those who are skeptical `);
           select('.python-logo').parentElement.outerHTML = RANT + 
             `<br><br>
             <h3>Here we have a simple 'Hello World' Example</h3><br><br>
-  <iframe style="width:100vw;height:100vh;padding:0px;margin:0px" frameborder="0" src="https://gist.pythonscript.org/kg583/74dcf08574bb37f13be6fd978279bd6e"></iframe>
+  <iframe style="border-radius:1vmax;width:80vw;height:80vh;padding:0px;margin:0px" frameborder="0" src="https://gist.pythonscript.org/kg583/74dcf08574bb37f13be6fd978279bd6e"></iframe>
             `;
       });
 
