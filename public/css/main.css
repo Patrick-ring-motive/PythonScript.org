@@ -3,3 +3,7 @@
     body{
       filter:var(--page-colors);
     }
+
+.main-header>div{
+    padding-left:0px;
+}
