@@ -4,6 +4,11 @@
       filter:var(--page-colors);
     }
 
+.main-header>div{
+   padding-left: 5vw !important;
+   margin-left:5vw !important;
+}
+
 html[orientation="portrait"] .main-header>div{
    padding-left:0px !important;
    margin-left:0px !important;
