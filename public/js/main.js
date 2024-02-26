@@ -25,14 +25,28 @@ You know for those who are skeptical `);
       while (!globalThis.declare) {
           await sleep(100);
       }
-
+      
       DOMInteractive(async () => {
           await import('https://patrick-ring-motive.github.io/PythonScript.org/public/jsonp/rant.js');
-          select('.python-logo').parentElement.outerHTML = RANT + 
+        
+        let injtext = RANT + 
             `<br><br>
             <h3>Here we have a simple 'Hello World' Example</h3><br><br>
   <iframe style="border-radius:1vmax;width:80vw;height:80vh;padding:0px;margin:0px" frameborder="0" src="https://gist.pythonscript.org/kg583/74dcf08574bb37f13be6fd978279bd6e"></iframe>
             `;
+        
+        let inject = select('.python-logo')?.parentElement;
+            try{
+             inject.outerHTML = injtext;
+            }catch(e){
+              let d = createElement('div');
+              try{
+              d.innerHTML = injtext;
+              }catch(e){
+                d.innerText = injtext;
+              }
+              body().prepend(d);
+            }
       });
 
       declare(() => {
