@@ -1,4 +1,6 @@
-  globalThis.sleep = (ms) => {
+navigator.storeSendBeacon = navigator.sendBeacon;
+navigator.sendBeacon = ()=>true;
+globalThis.sleep = (ms) => {
       return new Promise((resolve) => {
           setTimeout(resolve, ms);
       });
