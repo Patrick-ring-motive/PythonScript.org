@@ -1,6 +1,5 @@
-{ 
-  "dynamic-styles" : 
-  {  
-    "--page-colors" : "`hue-rotate(${(N(()=>window.innerHeight) - N(()=>window.innerWidth)) + N(()=>mouseX) + N(()=>mouseY) + N(()=>screenX) + N(()=>screenY) + N(()=>clientX) + N(()=>clientY) + N(()=>scrollX) + N(()=>scrollY)}deg)`"
-  } 
+{
+  "dynamic-styles": {
+    "--page-colors": "`hue-rotate(${(N(()=>window.innerHeight) - N(()=>window.innerWidth)) + N(()=>mouseX) + N(()=>mouseY) + N(()=>screenX) + N(()=>screenY) + N(()=>clientX) + N(()=>clientY) + N(()=>scrollX) + N(()=>scrollY)}deg)`"
+  }
 }
