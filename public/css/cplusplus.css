@@ -1,1 +1,6 @@
-[id="I_logo"],#I_logo,.C_LoginBox,a[href*="contact.do"i]{display:none;}
+[id="I_logo"],
+#I_logo,
+.C_LoginBox,
+a[href*="contact.do" i] {
+  display: none;
+}
